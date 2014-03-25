@@ -23,29 +23,29 @@ app.use(express.compress());
 
 statics.init(app);
 
-app.get('/news/rss.xml',                  newsRssFeed);
-app.get('/dependency-counts.json',        dependencyCounts);
-app.get('/stats',                         statsPage);
-app.get('/search',                        searchPage);
-app.get('/search.json',                   searchQuery);
-app.get('/package/:pkg/changes.json',     changes);
-app.get('/:user/:repo/dev-info.json',     devInfo);
-app.get('/:user/:repo/graph.json',        dependencyGraph);
-app.get('/:user/:repo/dev-graph.json',    devDependencyGraph);
-app.get('/:user/:repo/rss.xml',           rssFeed);
-app.get('/:user/:repo/dev-rss.xml',       devRssFeed);
-app.get('/:user/:repo/status.png',        statusBadge);
-app.get('/:user/:repo/status@2x.png',     retinaStatusBadge);
-app.get('/:user/:repo/status.svg',        svgStatusBadge);
-app.get('/:user/:repo/dev-status.png',    devStatusBadge);
-app.get('/:user/:repo/dev-status@2x.png', retinaDevStatusBadge);
-app.get('/:user/:repo/dev-status.svg',    svgDevStatusBadge);
-app.get('/:user/:repo@2x.png',            retinaStatusBadge);
-app.get('/:user/:repo.svg',               svgStatusBadge);
-app.get('/:user/:repo.png',               statusBadge);
-app.get('/:user/:repo',                   statusPage);
-app.get('/:user',                         profilePage);
-app.get('/',                              indexPage);
+app.get('/d/e/news/rss.xml',                  newsRssFeed);
+app.get('/d/e/dependency-counts.json',        dependencyCounts);
+app.get('/d/e/stats',                         statsPage);
+app.get('/d/e/search',                        searchPage);
+app.get('/d/e/search.json',                   searchQuery);
+app.get('/d/e/package/:pkg/changes.json',     changes);
+app.get('/d/e/:user/:repo/dev-info.json',     devInfo);
+app.get('/d/e/:user/:repo/graph.json',        dependencyGraph);
+app.get('/d/e/:user/:repo/dev-graph.json',    devDependencyGraph);
+app.get('/d/e/:user/:repo/rss.xml',           rssFeed);
+app.get('/d/e/:user/:repo/dev-rss.xml',       devRssFeed);
+app.get('/d/e/:user/:repo/status.png',        statusBadge);
+app.get('/d/e/:user/:repo/status@2x.png',     retinaStatusBadge);
+app.get('/d/e/:user/:repo/status.svg',        svgStatusBadge);
+app.get('/d/e/:user/:repo/dev-status.png',    devStatusBadge);
+app.get('/d/e/:user/:repo/dev-status@2x.png', retinaDevStatusBadge);
+app.get('/d/e/:user/:repo/dev-status.svg',    svgDevStatusBadge);
+app.get('/d/e/:user/:repo@2x.png',            retinaStatusBadge);
+app.get('/d/e/:user/:repo.svg',               svgStatusBadge);
+app.get('/d/e/:user/:repo.png',               statusBadge);
+app.get('/d/e/:user/:repo',                   statusPage);
+app.get('/d/e/:user',                         profilePage);
+app.get('/d/e',                               indexPage);
 
 /**
  * Do a home page
@@ -326,7 +326,7 @@ app.use(function(req, res) {
   res.type('txt').send('Not found');
 });
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 8337;
 
 app.listen(port);
 

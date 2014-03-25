@@ -7,7 +7,7 @@
     {{#if recentlyRetrievedManifests.length}}
     <ul class="border-list">
       {{#each recentlyRetrievedManifests}}
-      <li>{{user}} - <a href="/{{user}}/{{repo}}">{{repo}}</a></li>
+      <li>{{user}} - <a href="/d/e/{{user}}/{{repo}}">{{repo}}</a></li>
       {{/each}}
     </ul>
     {{else}}
@@ -32,7 +32,7 @@
     <ul class="border-list">
       {{#each recentlyUpdatedManifests}}
       <li>
-        {{user}} - <a href="/{{user}}/{{repo}}">{{repo}}</a>
+        {{user}} - <a href="/d/e/{{user}}/{{repo}}">{{repo}}</a>
         <ul>
           {{#each diffs}}
           <li>

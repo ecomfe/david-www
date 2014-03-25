@@ -1,9 +1,9 @@
 @@include('inc/top.html', {"id": "profile-page", "title": "Profile for {{user}}"})
 
   <h1>
-    <a href="@@githubsite/{{user}}">
+    <a href="/d/e/@@githubsite/{{user}}">
       {{#if repos.length}}
-      <img src="{{repos.[0].repo.owner.avatar_url}}" alt="Avatar for {{user}}">
+      <img src="/d/e/{{repos.[0].repo.owner.avatar_url}}" alt="Avatar for {{user}}">
       {{/if}}
       {{user}}
     </a>
@@ -13,8 +13,8 @@
   <ul class="border-list">
     {{#each repos}}
     <li class="{{info.status}}">
-      <a href="/{{../user}}/{{repo.name}}">{{manifest.name}}</a>
-      <a href="/{{../user}}/{{repo.name}}"><img src="/{{../user}}/{{repo.name}}.png" alt="Dependency status"></a>
+      <a href="/d/e/{{../user}}/{{repo.name}}">{{manifest.name}}</a>
+      <a href="/d/e/{{../user}}/{{repo.name}}"><img src="/d/e/{{../user}}/{{repo.name}}.png" alt="Dependency status"></a>
     </li>
     {{/each}}
   </ul>

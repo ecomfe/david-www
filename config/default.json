@@ -12,12 +12,12 @@
 		"host": "github.com"
 	},
 	"npm": {
-		"hostname": "http://npmjs.org",
+		"hostname": "http://edp-registry.baidu.com",
 		"options": {
-			"registry": "http://176.9.4.195/registry"
+			"registry": "http://edp-registry.baidu.com"
 		}
 	},
 	"site": {
-		"hostname": "https://david-dm.org"
+		"hostname": "https://edp-api.baidu.com"
 	}
 }
